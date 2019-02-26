@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labirintog.GUIController">
+   <children>
+      <SubScene fx:id="subscene" height="700.0" layoutX="14.0" layoutY="10.0" width="700.0">
+        <root>
+          <Region />
+        </root>
+      </SubScene>
+      <Label fx:id="CREAZIONE" layoutX="722.0" layoutY="39.0" text="Creazione">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="CREAZIONE0" layoutX="725.0" layoutY="83.0" text="Numero di righe:" />
+      <TextField fx:id="CREAZNumRighe" layoutX="840.0" layoutY="79.0" onAction="#creaLabirinto" prefHeight="25.0" prefWidth="35.0" promptText="10" />
+      <TextField fx:id="CREAZNumColonne" layoutX="840.0" layoutY="113.0" onAction="#creaLabirinto" prefHeight="25.0" prefWidth="35.0" promptText="10" />
+      <Label fx:id="CREAZIONE1" layoutX="725.0" layoutY="117.0" text="Numero di colonne:" />
+      <Button fx:id="CREAZBottoneCrea" layoutX="725.0" layoutY="143.0" mnemonicParsing="false" onAction="#creaLabirinto" prefHeight="25.0" prefWidth="55.0" text="Crea" />
+      <Separator layoutX="722.0" layoutY="182.0" prefHeight="7.0" prefWidth="228.0" />
+      <Label fx:id="UTILITY" layoutX="724.0" layoutY="202.0" text="Utility">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="UTILITY1" layoutX="729.0" layoutY="247.0" prefHeight="17.0" prefWidth="125.0" text="Salva il labirinto" textAlignment="CENTER" />
+      <Button fx:id="UTILSALVA" layoutX="858.0" layoutY="243.0" mnemonicParsing="false" onAction="#salva" prefHeight="25.0" prefWidth="55.0" text="Salva" />
+      <Button fx:id="UTILcarica" layoutX="858.0" layoutY="282.0" mnemonicParsing="false" onAction="#leggiDaFile" prefHeight="25.0" prefWidth="55.0" text="Carica" />
+      <Label fx:id="UTILFileSelezionato" layoutX="725.0" layoutY="286.0" prefHeight="17.0" prefWidth="129.0" text="Seleziona il file" textAlignment="CENTER" />
+      <Separator layoutX="717.0" layoutY="321.0" prefHeight="7.0" prefWidth="228.0" />
+      <Label fx:id="LABIRINTO" layoutX="724.0" layoutY="333.0" text="Labirinto">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="LABRigenera" layoutX="726.0" layoutY="374.0" mnemonicParsing="false" onAction="#rigenera" prefHeight="25.0" prefWidth="82.0" text="Rigenera" />
+      <Button fx:id="LABreset" layoutX="726.0" layoutY="408.0" mnemonicParsing="false" onAction="#reset" prefHeight="25.0" prefWidth="82.0" text="Reset" />
+      <Label fx:id="LAB0" layoutX="813.0" layoutY="378.0" text="Crea un nuovo labirinto" />
+      <Label fx:id="LAB1" layoutX="816.0" layoutY="412.0" text="Torna al punto iniziale" />
+      <Button fx:id="LABrisolvi" layoutX="726.0" layoutY="444.0" mnemonicParsing="false" onAction="#risolvi" prefHeight="25.0" prefWidth="82.0" text="Risolvi" />
+      <Label fx:id="LAB2" layoutX="812.0" layoutY="448.0" text="Cerca di risolvere il labirinto" />
+      <RadioButton fx:id="UTILAbilita" layoutX="827.0" layoutY="210.0" mnemonicParsing="false" onAction="#abilitaUtility" text="Abilita" />
+      <RadioButton fx:id="LABAbilita" layoutX="830.0" layoutY="341.0" mnemonicParsing="false" onAction="#abilitaLabirinto" text="Abilita" />
+   </children>
+</AnchorPane>
